@@ -86,8 +86,8 @@ full_bond_feature_dims = get_bond_feature_dims(bond_id_names)
 
 
 if Use_column_info==True:
-    bond_id_names.extend(['coated', 'immobilized'])
-    bond_float_names.extend(['diameter'])
+    bond_id_names.extend(['coated', 'immobilized'])   #添加字符串 coated涂敷  immobilized 固定的
+    bond_float_names.extend(['diameter'])    #diameter直径
     if Use_geometry_enhanced==True:
         bond_angle_float_names.extend(['column_TPSA', 'column_TPSA', 'column_TPSA', 'column_MDEC', 'column_MATS'])
     else:
